@@ -1,0 +1,26 @@
+{
+  "name": "push-notifications",
+  "version": "1.0.0",
+  "description": "An example of push notifications and web push protocol",
+  "author": "Curiosity driven <open-source@curiosity-driven.org>",
+  "license": "APL",
+  "dependencies": {
+    "express": "^4.11.2",
+    "basic-auth": "^1.0.3",
+    "body-parser": "^1.13.2",
+    "nedb": "^1.1.2",
+    "monk": "^1.0.1",
+    "mongodb": "^2.0.35",
+    "request": "^2.58.0"
+  },
+  "engines": {
+    "node": ">=0.10.x"
+  },
+  "config": {
+    "port": 3000
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/curiosity-driven/push-notifications.git"
+  }
+}

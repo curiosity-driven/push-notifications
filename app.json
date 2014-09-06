@@ -1,0 +1,15 @@
+{
+  "name": "Push notifications",
+  "description": "An example of push notifications and web push protocol",
+  "website": "https://curiosity-driven.org/push-notifications",
+  "success_url": "/",
+  "addons": ["mongolab:sandbox"],
+  "env": {
+    "GCM_SENDER_ID": {
+      "description": "Project number taken from new project at https://console.developers.google.com/project/"
+    },
+    "GCM_SENDER_KEY": {
+      "description": "Sender key available at https://console.developers.google.com/project/ABC/apiui/credential"
+    }
+  }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+Copyright 2015 Curiosity driven
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+<html>
+<head>
+    <title>Push notifications</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="manifest" href="manifest.json">
+<!-- The snipped below will be extracted by the service worker during push notification:
+
+  <icon>https://curiosity-driven.org/assets/icon-192.png</icon>
+  <entry>
+    <title>Reactive WebRTC conference</title>
+    <link href="/"/>
+    <id>urn:uuid:ad3fc4c9-55d2-46bc-bc3a-895fd60e966e</id>
+    <updated>2015-05-29T16:20:01Z</updated>
+    <published>2015-05-29T16:20:01Z</published>
+    <summary>WebRTC can be used to build a plugin-free video conference with screensharing in pure JavaScript. Observables — proposed for ES7 — let application logic be expressed in a clean, functional and composable way.</summary>
+  </entry>
+-->
+</head>
+<body>
+    <div class="subscription">
+        <h3>Subscribe via Web Push</h3>
+        <p>It appears you are using a browser that can receive Push Notifications.</p>
+        <div>
+            <div class="status">
+            </div>
+            <div class="right">
+                <input type="button" value="Subscribe to new articles" disabled class="subscribe">
+                <input type="button" value="Unsubscribe" disabled hidden class="unsubscribe">
+            </div>
+        </div>
+    </div>
+    <div>
+        <p>To send the notification to this browser use:</p>
+        <pre><code>curl -i -X POST --user <span id="username"></span>: http://localhost:3000/notifications</code></pre>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
